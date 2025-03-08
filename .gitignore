@@ -1,0 +1,85 @@
+# Combined .gitignore for React frontend and Django backend
+
+# -----------------
+# React / Frontend
+# -----------------
+# dependencies
+frontend/node_modules
+frontend/.pnp
+frontend/.pnp.js
+
+# testing
+frontend/coverage
+
+# production
+frontend/build
+
+# misc
+frontend/.DS_Store
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# -----------------
+# Django / Backend
+# -----------------
+# Python bytecode
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+backend/**/__pycache__/
+
+# Django stuff
+backend/*.log
+backend/local_settings.py
+backend/db.sqlite3
+backend/db.sqlite3-journal
+backend/media
+
+# Virtual environments
+backend/venv/
+backend/env/
+backend/.env
+backend/ENV/
+
+# Distribution / packaging
+backend/dist/
+backend/build/
+backend/*.egg-info/
+
+# Unit test / coverage reports
+backend/htmlcov/
+backend/.tox/
+backend/.nox/
+backend/.coverage
+backend/.coverage.*
+backend/.cache/
+backend/nosetests.xml
+backend/coverage.xml
+backend/*.cover
+
+# -----------------
+# General
+# -----------------
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*~
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# secrets
+*.pem
